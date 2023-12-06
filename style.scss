@@ -3,6 +3,13 @@
     padding: 0;
 }
 
+$bp:375px;
+
+@mixin max-width {
+    @media (max-width:$bp)
+        {@content;}
+}
+
 body{
     width: 100%;
 }
@@ -63,6 +70,27 @@ body{
         flex:1;
         justify-content: space-around;
         align-items: center;
+
+        .contact{
+            width: 140px;
+            height: 56px;
+            border-radius: 25px;
+            border: 0px;
+            font-family: 'Fraunces';
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 700px;
+            line-height: 25px;
+            letter-spacing: -0.11px;
+            color: #24303E;
+            background-color: #ffffff;
+            transition: 0.5s;
+        }
+
+        .contact:hover{
+            color: #FFF;
+            background-color: rgb(129, 211, 244);
+        }
     }
 }
 
@@ -93,6 +121,7 @@ body{
 
     &__title{
         font-family: 'Fraunces';
+        color: #24303E;
         font-size: 40px;
         font-weight: 900;
         line-height: 49.32px;
@@ -102,6 +131,7 @@ body{
     &__p{
         text-align: left;
         font-family: 'Barlow';
+        color: #808397;
         font-size:18px;
         font-weight: 600;
         line-height: 30px;
@@ -110,12 +140,34 @@ body{
     }
 
     &__learn{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 137px;
         text-transform: uppercase;
         font-family: 'Fraunces';
+        color: #24303E;
         font-size: 15px;
         line-height: 25px;
         letter-spacing: 1px;
         margin-top: 40px;
+        border-bottom: 10px solid rgb(250, 212, 0, 0.3);
+        border-radius: 3px 5px;
+        display: inline-block;
+        height: 0.8em;
+        transition: 0.5s;
+
+        &--second{
+            border-bottom: 10px solid rgb(254, 119, 102, 0.3);
+        }
+    }
+
+    &__learn:hover{
+        border-bottom: 10px solid rgb(250, 212, 0);
+    }
+
+    &__learn--second:hover{
+        border-bottom: 10px solid rgb(254, 119, 102);
     }
 
     &__img{
@@ -133,7 +185,6 @@ body{
     flex-direction: row;
     
     &__text{
-        border: 2px solid black;
         width: 339px;
         height: 143px;
         margin-top: 398px;
@@ -156,12 +207,17 @@ body{
 
     &__p{
         font-family: 'Barlow';
+        color: #3E7467;
         font-size: 16px;
         font-weight: 600;
         line-height: 27px;
         letter-spacing: -0.11px;
         text-align: center;
         margin-top: 34px;
+
+        &--cherry{
+            color: #19536C;
+        }
     }
 
     &--cherry{
@@ -169,6 +225,7 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
+        color: #24554A;
     }
 
     &--orange{
@@ -176,13 +233,12 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
+        color: #052C3B;
     }
 }
 
 .testimonials{
     &__client{
-        display: flex;
-        border: 3px solid black;
         display: flex;
         flex-direction: column;
         margin-right: 165px;
@@ -194,17 +250,28 @@ body{
     &__title{
         display: flex;
         justify-content: center;
+        font-family: 'Fraunces';
+        color: #A7AAAD;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 24.66px;
+        letter-spacing: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 81px;
     }
 
     &__img{
         width: 72px;
         height: 72px;
         border-radius: 50%;
+        margin-top: 106px;
     }
 
     &__clients{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .client{
@@ -212,5 +279,122 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 0px;
+
+        &__text{
+            font-family: 'Barlow';
+            color: #5B636D;
+            width: 350px;
+            height: 96px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 32px;
+            letter-spacing: -0.13px;
+            text-align: center;
+            margin-top: 58px;
+        }
+
+        &__info{
+            width:203px;
+            height: 56px;
+            margin-top: 69px;
+        }
+
+        &__name{
+            font-family: 'Fraunces';
+            color: #24303E;
+            font-size: 18px;
+            font-weight: 900;
+            line-height: 22.19px;
+            letter-spacing: -0.13px;
+            text-align: center;
+        }
+
+        &__work{
+            font-family: 'Barlow';
+            color: #A7AAAD;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 25px;
+            letter-spacing: -0.1px;
+            text-align: center;
+        }
+    }
+}
+
+.bottom-img{
+    display: flex;
+
+    .bottom-img2{
+        display: flex;
+        flex-direction: row;
+
+    &__first{
+        display: flex;
+        width: 50%;
+    }
+
+    &__second{
+        display: flex;
+        width: 50%;
+    }
+}
+}
+
+.legal{
+    display: flex;
+    background: #90D4C6;
+    justify-content: center;
+
+    &__1{
+        width: 300px;
+        height: 206px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 72px;
+        margin-bottom: 72px;
+    }
+
+    &__logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__logo2{
+        filter: invert(49%) sepia(4%) saturate(4285%) hue-rotate(118deg) brightness(81%) contrast(102%);
+    }
+
+    &__menu{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        color: #458D7E;
+        font-family: 'Barlow';
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: -0.13px;
+        transition: 0.5s;
+    }
+
+    &__logos{
+        display: flex;
+        justify-content: space-between;
+        width: 164px;
+    }
+
+    .logo,
+    .about{
+        transition: 0.5s;
+    }
+
+    .logo:hover{
+        filter: brightness(0) invert(1);
+    }
+    .about:hover{
+        color:white;
     }
 }

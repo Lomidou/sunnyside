@@ -20,7 +20,7 @@
                     <div class="about">About</div>
                     <div class="services">Services</div>
                     <div class="projects">Projects</div>
-                    <div class="contact">Contact</div>
+                    <button type="button" class="contact">Contact</button>
                 </nav>
             </section>
             <section class="creat1">
@@ -36,7 +36,7 @@
                     <p class="box2__p">We are a full-service creative agency specializing in helping brands grow fast.
                         Engage your
                         clients through compelling visuals that do most of the marketing for you.</p>
-                    <div class="box2__learn">Learn more</div>
+                    <fieldset><legend class="box2__learn">Learn more</legend></fieldset>
                 </div>
             </section>
         </section>
@@ -49,84 +49,101 @@
                     <p class="box2__p">Using a collaborative formula of designers, researchers, photographers,
                         videographers, and
                         copywriters, we’ll build and extend your brand in digital places. </p>
-                    <div class="box2__learn">Learn more</div>
+                    <fieldset><legend class="box2__learn box2__learn--second">Learn more</legend></fieldset>
                 </div>
             </section>
         </section>
 
         <section class="box3">
-            <div class="box3__text">
-                <div class="box3__title">Graphic Design</div>
-                <p class="box3__p">Great design makes you memorable. We deliver artwork that underscores your brand
-                    message and captures potential clients’ attention.</p>
+            <div class="box3 box3--cherry">
+                <div class="box3__text">
+                    <div class="box3__title">Graphic Design</div>
+                    <p class="box3__p box3__p--orange">Great design makes you memorable. We deliver artwork that underscores your brand
+                        message and captures potential clients’ attention.</p>
+                </div>
             </div>
-        </section>
-            <section class="box3 box3--orange">
-            <div class="box3__text">
-                <div class="box3__title">Photography</div>
-                <p class="box3__p">Increase your credibility by getting the most stunning, high-quality photos that
-                    improve your business image.</p>
+            <div class="box3 box3--orange">
+                <div class="box3__text">
+                    <div class="box3__title">Photography</div>
+                    <p class="box3__p box3__p--cherry">Increase your credibility by getting the most stunning, high-quality photos that
+                        improve your business image.</p>
+                </div>
             </div>
         </section>
 
         <div class="testimonials">
-            <div class="title-testimonials"> Client Testimonials</div>
-            <div class="client-testimonials">
-                <div class="emily">
-                    <img url="images/people/image-emily.jpg">
-                    <p class="testimonial-tex">We put our trust in Sunnyside and they delivered, making sure our needs
-                        were
-                        met and deadlines were always hit.</p>
-                    <div class="testimonial-name">Emily R.</div>
-                    <div class="testimonial-work">Marketing Director</div>
-                </div>
+            <div class="testimonials__client">
+                <div class="testimonials__title"> Client Testimonials</div>
+                <div class="testimonials__clients">
+                    <div class="client">
+                        <img class="testimonials__img" src="images/people/image-emily.jpg">
+                        <p class="client__text">We put our trust in Sunnyside and they delivered, making sure our
+                            needs
+                            were
+                            met and deadlines were always hit.</p>
+                        <div class="client__info">
+                            <div class="client__name">Emily R.</div>
+                            <div class="client__work">Marketing Director</div>
+                        </div>
+                    </div>
 
-                <div class="thomas">
-                    <img url="images/people/image-thomas.jpg">
-                    <p class="testimonial-tex">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
-                        success
-                        made it a satisfying and enjoyable experience.</p>
-                    <div class="testimonial-name">Thomas S.</div>
-                    <div class="testimonial-work">Chief Operating Officeer</div>
-                </div>
+                    <div class="client">
+                        <img class="testimonials__img" src="images/people/image-thomas.jpg">
+                        <p class="client__text">Sunnyside’s enthusiasm coupled with their keen interest in our
+                            brand’s
+                            success
+                            made it a satisfying and enjoyable experience.</p>
+                        <div class="client__info">
+                            <div class="client__name">Thomas S.</div>
+                            <div class="client__work">Chief Operating Officeer</div>
+                        </div>
+                    </div>
 
-                <div class="jennie">
-                    <img url="images/people/image-jennie.jpg">
-                    <p class="testimonial-tex">Incredible end result! Our sales increased over 400% when we worked with
-                        Sunnyside. Highly recommended!</p>
-                    <div class="testimonial-name">Jennie F.</div>
-                    <div class="testimonial-work">Business Owner</div>
-                </div>
+                    <div class="client">
+                        <img class="testimonials__img" src="images/people/image-jennie.jpg">
+                        <p class="client__text">Incredible end result! Our sales increased over 400% when we worked
+                            with
+                            Sunnyside. Highly recommended!</p>
+                        <div class="client__info">
+                            <div class="client__name">Jennie F.</div>
+                            <div class="client__work">Business Owner</div>
+                        </div>
+                    </div>
 
+                </div>
             </div>
         </div>
 
-        <div class="bottom-images">
-            <div class="first-two">
-                <img url="images/photos/image-gallery-milkbottles.jpg">
-                <img url="images/photos/image-gallery-orange.jpg">
+        <div class="bottom-img">
+            <div class="bottom-img2">
+                <img class="bottom-img2__first" src="images/photos/image-gallery-milkbottles.jpg">
+                <img class="bottom-img2__second" src="images/photos/image-gallery-orange.jpg">
             </div>
-            <div class="two-last">
-                <img url="images/photos/image-gallery-cone.jpg">
-                <img url="images/photos/image-gallery-sugarcubes.jpg">
+            <div class="bottom-img2">
+                <img class="bottom-img2__first" src="images/photos/image-gallery-cone.jpg">
+                <img class="bottom-img2__second" src="images/photos/image-gallery-sugarcubes.jpg">
             </div>
         </div>
 
         <footer>
-            <div class="footer">
-                <div class="title-footer"> Sunnyside</div>
-                <div class="footer-menu">
-                    <div class="about-footer">About</div>
-                    <div class="services-foot">Services</div>
-                    <div class="projects-footer">Project</div>
+            <section class="legal">
+                <div class="legal__1">
+                    <section class="legal__logo">
+                        <img class="legal__logo2" src="images/logo.svg">
+                    </section>
+                    <div class="legal__menu">
+                        <div class="about">About</div>
+                        <div class="services">Services</div>
+                        <div class="projects">Project</div>
+                    </div>
+                    <div class="legal__logos">
+                        <img src="images/icons/icon-facebook.svg">
+                        <img src="images/icons/icon-instagram.svg">
+                        <img src="images/icons/icon-twitter.svg">
+                        <img src="images/icons/icon-pinterest.svg">
+                    </div>
                 </div>
-                <div class="logos">
-                    <img src="images/icons/icon-facebook.svg">
-                    <img src="images/icons/icon-instagram.svg">
-                    <img src="images/icons/icon-twitter.svg">
-                    <img src="images/icons/icon-pinterest.svg">
-                </div>
-            </div>
+            </section>
         </footer>
     </main>
 </body>
