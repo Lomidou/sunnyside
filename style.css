@@ -10,10 +10,18 @@ body {
 .box1 {
   background-image: url(images/photos/image-header.jpg);
   background-size: cover;
+  background-position: center;
   overflow: hidden;
   background-repeat: no-repeat;
   height: 800px;
   width: 100%;
+}
+@media (max-width: 375px) {
+  .box1 {
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+  }
 }
 .box1 .creat {
   font-family: "Fraunces";
@@ -25,6 +33,11 @@ body {
   color: #FFF;
   letter-spacing: 8.75px;
   text-transform: uppercase;
+}
+@media (max-width: 375px) {
+  .box1 .creat {
+    font-size: 40px;
+  }
 }
 .box1 .creat1 {
   background-image: url(images/icons/icon-arrow-down.svg);
@@ -53,10 +66,33 @@ body {
 }
 .nav .logo1 {
   flex: 2;
+  flex-direction: row;
+  margin: auto;
+}
+@media (max-width: 375px) {
+  .nav .logo1 {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+  }
 }
 .nav .logo1 #logo {
   height: 33px;
   width: 170px;
+}
+.nav .logo1 .hamburger {
+  display: none;
+  background: transparent;
+  border: 0px;
+  cursor: pointer;
+}
+@media (max-width: 375px) {
+  .nav .logo1 .hamburger {
+    display: flex;
+  }
+}
+.nav .logo1 .hamburger:hover__list {
+  display: flex;
 }
 .nav .menu {
   display: flex;
@@ -64,6 +100,12 @@ body {
   flex: 1;
   justify-content: space-around;
   align-items: center;
+  max-width: 100%;
+}
+@media (max-width: 375px) {
+  .nav .menu {
+    display: none;
+  }
 }
 .nav .menu .contact {
   width: 140px;
@@ -88,24 +130,56 @@ body {
 .box2 {
   display: flex;
 }
+@media (max-width: 375px) {
+  .box2 {
+    flex-direction: column;
+  }
+}
+.box2__box2--first {
+  justify-content: center;
+  align-items: center;
+}
+.box2__box2--second {
+  justify-self: center;
+  align-items: center;
+}
 .box2__text {
   justify-content: center;
   align-items: center;
   display: flex;
   text-align: left;
   width: 100%;
+  min-height: 100%;
+  overflow: auto;
+}
+@media (max-width: 375px) {
+  .box2__text {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+  }
 }
 .box2__text2 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
-  height: 285px;
+  min-height: 100%;
   margin-right: 110px;
   margin-left: 165px;
 }
 .box2__text2--second {
   margin-right: 165px;
   margin-left: 110px;
+}
+@media (max-width: 375px) {
+  .box2__text2 {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 24px 0 24px;
+  }
 }
 .box2__title {
   font-family: "Fraunces";
@@ -114,6 +188,11 @@ body {
   font-weight: 900;
   line-height: 49.32px;
   letter-spacing: -0.29px;
+}
+@media (max-width: 375px) {
+  .box2__title {
+    font-size: 32px;
+  }
 }
 .box2__p {
   text-align: left;
@@ -124,6 +203,11 @@ body {
   line-height: 30px;
   letter-spacing: -0.13px;
   margin-top: 32px;
+}
+@media (max-width: 375px) {
+  .box2__p {
+    text-align: center;
+  }
 }
 .box2__learn {
   display: flex;
@@ -154,25 +238,47 @@ body {
 }
 .box2__img {
   width: 100%;
+  min-height: 100%;
+  overflow: auto;
 }
 .box2--first {
   display: flex;
   flex-direction: row-reverse;
 }
+@media (max-width: 375px) {
+  .box2--first {
+    flex-direction: column;
+  }
+}
 
 .box3 {
   display: flex;
   flex-direction: row;
+  min-width: 100%;
+}
+@media (max-width: 375px) {
+  .box3 {
+    flex-direction: column;
+  }
 }
 .box3__text {
   width: 339px;
-  height: 143px;
+  height: auto;
   margin-top: 398px;
   margin-bottom: 59px;
-  margin-left: 190px;
-  margin-right: 190px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 375px) {
+  .box3__text {
+    width: 327px;
+    height: 100%;
+    margin: 398px 24px 59px 24px;
+  }
 }
 .box3__title {
   font-family: "Fraunces";
@@ -200,15 +306,37 @@ body {
   background: url(images/photos/image-graphic-design.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  background-position: center;
+  min-width: 50%;
+  height: auto;
   color: #24554A;
+}
+@media (max-width: 375px) {
+  .box3--cherry {
+    background-size: auto;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
 }
 .box3--orange {
   background: url(images/photos/image-photography.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  background-position: center;
+  min-width: 50%;
+  height: auto;
   color: #052C3B;
+}
+@media (max-width: 375px) {
+  .box3--orange {
+    margin-top: -8px;
+    background-size: auto;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .testimonials__client {
@@ -242,6 +370,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media (max-width: 1400px) {
+  .testimonials__clients {
+    flex-direction: column;
+  }
 }
 .testimonials .client {
   display: flex;
@@ -293,13 +426,28 @@ body {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 375px) {
+  .bottom-img .bottom-img2 {
+    flex-direction: column;
+  }
+}
 .bottom-img .bottom-img2__first {
   display: flex;
   width: 50%;
 }
+@media (max-width: 375px) {
+  .bottom-img .bottom-img2__first {
+    width: 100%;
+  }
+}
 .bottom-img .bottom-img2__second {
   display: flex;
   width: 50%;
+}
+@media (max-width: 375px) {
+  .bottom-img .bottom-img2__second {
+    width: 100%;
+  }
 }
 
 .legal {
