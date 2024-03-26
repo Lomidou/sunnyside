@@ -1,8 +1,6 @@
 
 <h1>Sunnyside</h1>
 
-The project is a customer management application for the [COGIP](https://alice-becode.funquality.be/COGIP/home-body.html) company.
-
 This __BeCode__ exercise is spread over 2 days.
 
 ## 🛠️ Skills
